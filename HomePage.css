@@ -1,0 +1,125 @@
+
+#welcome_img {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+body {
+    background-color: #ddcedd;
+    color: #722971;
+    font-family: Calibri, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    padding-top: 60px;
+    display: block;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 0;
+    padding-top: 20px;
+    display: inline-block;
+    animation-fill-mode: forwards;
+    animation-name: slideDownHeader;
+    animation-duration: 3s;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeInButtons;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.description {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeInDescription;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.click_me-button {
+    background-color: #3d3a4c;
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: none;
+    border: #3d3a4c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.click_me-button:hover {
+    background-color: white;
+    color: #3d3a4c;
+}
+
+@keyframes slideDownHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDescription {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInButtons {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+footer {
+    background-color: #ddcedd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer a img {
+    padding: 5px;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+}

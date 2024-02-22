@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create an account</title>
+    <link rel="stylesheet" href="CreateAnAcount.css">
+</head>
+<a href = "HomePage.html">
+    <img id="HomePageImage" src="https://cdn4.iconfinder.com/data/icons/game-interface-outline/100/objects-02-512.png" >
+</a>
+<body>
+
+<h2>Create an account</h2>
+
+<form class="form_container" action="HomePage.html" method="GET">
+    <div class="form_div">
+        <label>Name:</label>
+        <input type="text" name="FirstName">
+    </div>
+    <div class="form_div">
+        <label>Last Name:</label>
+        <input type="text" name="LastName">
+    </div>
+    <div class="form_div">
+        <label>Email:</label>
+        <input type="email" name="Email">
+    </div>
+    <div class="form_div">
+        <label>Password:</label>
+        <input type="password" name="password">
+    </div>
+    <div class="form_div">
+        <label>Phone number:</label>
+        <input type="tel" name="phoneNumber">
+    </div>
+    <div class="form_div">
+        <label>Age:</label>
+        <input type="number" name="Age" min="5" max="100">
+    </div>
+    <br>
+    <input type="submit" value="create an account" class="submit-button">
+    <br>
+</form>
+<script src="createAnAccount.js"></script>
+</body>
+</html>

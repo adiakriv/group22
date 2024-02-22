@@ -1,0 +1,166 @@
+body {
+    background-color: #ddcedd;
+    color: #722971;
+    font-family: Calibri, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile-container {
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #ddcedd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer a img {
+    padding: 5px;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+}
+.form_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form_div {
+    width: 30%;
+    margin: 20px;
+}
+
+
+.form_container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form_container.form_div {
+    margin-bottom: 3px;
+}
+
+.form_container label {
+    display: block;
+}
+
+h2 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+.submit-button {
+    background-color: #3d3a4c;
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: none;
+    border: #3d3a4c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+.click_me-button {
+    background-color: #3d3a4c;
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    text-decoration: none;
+    border: #3d3a4c;
+    border-radius: 15px;
+    padding: 15px;
+    width: 150px;
+}
+
+.click_me-button:hover {
+    background-color: white;
+    color: #3d3a4c;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: #3d3a4c;
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rating label::before {
+    content: '\2605';
+}
+
+.rating input:checked ~ label {
+    color: orange;
+}
+
+#HomePageImage {
+    width:4%;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+    .form_div {
+        width: 90%;
+    }
+
+    .rating {
+        width: 100%;
+        text-align: center; /* Center the stars on small screens */
+        margin-top: 20px;   /* Add some space between Professions and stars */
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .form_div {
+        width: 30%; /* Reset the width for larger screens */
+    }
+
+    .rating {
+        width: auto; /* Reset the width for larger screens */
+        text-align: left; /* Align the stars to the left on larger screens */
+        margin-top: 0; /* Reset the margin for larger screens */
+    }
+}

@@ -1,0 +1,282 @@
+body {
+    background-color: #ddcedd;
+    color: #722971;
+    font-family: Calibri ,sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: auto;
+    padding-top: 60px;
+    display: block;
+    text-align: center;
+    width: 70%;
+}
+
+.form_container{
+    margin: 0 auto;
+    padding: 10px;
+    width: fit-content;
+}
+.form_container.form_div{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.form_container label {
+    display: block;
+}
+
+
+h2 {
+    font-size: 35px;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.submit-button {
+    background-color: #3d3a4c;
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: none;
+    border: #3d3a4c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+
+}
+
+.click_me-button {
+    background-color: #3d3a4c;
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: none;
+    border: #3d3a4c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+.click_me-button:hover {
+    background-color: white;
+    color: #3d3a4c;
+}
+
+
+.submit-button:hover{
+    background-color: white;
+    color: #3d3a4c;
+}
+
+.form_container input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.description {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.description p {
+    width: 100%;
+}
+
+.form_div input[type="text"],
+.form_div input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#subject, #price {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form_div select,
+.form_div textarea,
+.form_div input[type="date"] {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+h2 {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: slideDownHeader;
+    animation-duration: 3s;
+}
+
+.description,
+.buttons-container {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.description {
+    animation-name: fadeInDescription;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    animation-name: fadeInButtons;
+    animation-duration: 3s;
+    animation-delay: 6s;
+}
+
+
+.click_me-button {
+    margin: 10px;
+    white-space: nowrap;
+}
+
+@keyframes slideDownHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDescription {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInButtons {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#HomePageImage {
+    width:4%;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+#welcome_img {
+    width: 15%;
+}
+
+#search {
+    width: 3%;
+}
+
+
+.upload-box {
+    position: absolute;
+    top:70%;
+    right:10%;
+    width: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #722971;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.upload-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.upload-box input[type="file"] {
+    display: block;
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 auto 10px;
+}
+
+.upload-box input[type="submit"] {
+    background-color: #722971;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.upload-box input[type="submit"]:hover {
+    background-color: #ddcedd;
+    color: #722971;
+}
+.submit-button {
+    display: block;
+    margin: 0 auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #ddcedd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer a img {
+    padding: 5px;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+}

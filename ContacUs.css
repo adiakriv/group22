@@ -1,0 +1,178 @@
+body {
+    background-color: #ddcedd;
+    color: #722971;
+    font-family: Calibri ,sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.form_container{
+    margin: 0 auto;
+    padding: 20px;
+    width: fit-content;
+    justify-content: center;
+
+}
+
+.form_container input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.form_container.form_div{
+    margin-bottom: 3px;
+
+}
+.form_container label {
+    display: block;
+}
+.container{
+    width: 10%;
+    margin: auto;
+    padding-top: 60px;
+    display: block;
+
+}
+
+h2 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.submit-button {
+    background-color: #3d3a4c;
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: none;
+    border: #3d3a4c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+
+
+.submit-button:hover{
+    background-color: white;
+    color: #3d3a4c;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.circle {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin: 0 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.circle:hover {
+    color: #722971;
+    border-color: #722971;
+    cursor: pointer;
+}
+
+.circle a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    line-height: normal;
+}
+h2 {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: slideDownHeader;
+    animation-duration: 3s;
+}
+
+
+
+@keyframes slideDownHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDescription {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInButtons {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#HomePageImage {
+    width:4%;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+footer {
+    background-color: #ddcedd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer a img {
+    padding: 5px;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+}

@@ -45,7 +45,7 @@ Password requires letters and numbers, with a minimum length of 8 characters.
 Phone number must have 10 digits, starting with 0, and age must be realistic for private lessons.
 * Homepage:
 Implemented a logout feature, returning the user to the initial window upon clicking "Log Out".
-*Contact Us Page:
+* Contact Us Page:
 Enforced completion of all fields when submitting a contact form, displaying an appropriate message if any fields are incomplete.
 * My Profile Page:
 Provided an option to edit existing profiles.

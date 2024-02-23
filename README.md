@@ -38,7 +38,7 @@ We created a customized CSS page for each page. The designs are uniform througho
 ## Dynamic realization of the website in javascript:
 #### Utilization of JavaScript Files Across All Pages:
 * System Login Page (TeacherForYou): Implemented validation ensuring all fields are filled and verified the existence of the user in the system.
-*Create Account Page:
+* Create Account Page:
 Enforced completion of all fields during user creation, with each field undergoing separate validation:
 Email validation ensures correct email format.
 Password requires letters and numbers, with a minimum length of 8 characters.

@@ -1,12 +1,4 @@
-body {
-    background-color: #ddcedd;
-    color: #722971;
-    font-family: Calibri, sans-serif;
-    font-style: italic;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-}
+
 
 .profile-container {
     width: 40%;
@@ -20,26 +12,8 @@ body {
 .profile-container {
     margin-bottom: 20px;
 }
-footer {
-    background-color: #ddcedd;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-}
 
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-}
 
-footer a img {
-    padding: 5px;
-    border-radius: 30%;
-    width: 50px;
-    height: 50px;
-}
 .form_container {
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +42,7 @@ footer a img {
     display: block;
 }
 
-h2 {
+h1 {
     margin: 0;
     padding: 20px 0;
     font-size: 45px;

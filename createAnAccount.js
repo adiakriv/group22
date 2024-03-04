@@ -18,6 +18,15 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Last name must be less than 50 characters.');
             return;
         }
+                if (/\d/.test(firstName) || /\d/.test(lastName)) {
+            alert('First name and last name cannot contain numbers.');
+            return;
+        }
+                var nameRegex = /^[A-Za-z]+$/;
+        if (!nameRegex.test(firstName) || !nameRegex.test(lastName)) {
+            alert('First name and last name can only contain letters.');
+            return;
+        }
 
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
@@ -27,6 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (password.length < 8 || !/\d/.test(password) || !/[a-zA-Z]/.test(password)) {
             alert('Password must be at least 8 characters long and contain both letters and numbers.');
+            return;
+        }
+
+        CONFIRM_PASSWORD = document.querySelector('input[name="confirmPassword"]').value;
+        if (password !== CONFIRM_PASSWORD) {
+            alert('Passwords do not match.');
             return;
         }
 

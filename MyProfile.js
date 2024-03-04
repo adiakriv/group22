@@ -9,10 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to handle lesson cancellation confirmation
     function confirmLessonCancellation(lessonItem) {
-        const confirmation = confirm("Are you sure you want to cancel the class?");
+        const confirmation = confirm("Are you sure you want to cancel the lesson?");
         if (confirmation) {
             lessonItem.parentNode.removeChild(lessonItem);
-            alert("The class has been successfully canceled.");
+            alert("The lesson has been successfully canceled.");
+
         }
     }
 

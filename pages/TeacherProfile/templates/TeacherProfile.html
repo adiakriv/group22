@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Teacher Profile</title>
-    <link rel="stylesheet" href="TeacherProfile.css">
-    <link rel="stylesheet" href="Style.css">
+{% extends 'base.html' %}
+{% set page_head_title = 'Teacher For You' %}
+{% block page_head_css %}
+   <link rel="stylesheet" href="{{ url_for('TeacherProfile.static', filename='css/TeacherProfile.css') }}"/>
+{% endblock %}
+
+{% block page_body_content %}
 </head>
-<a href = "HomePage.html">
+<a href = "../../HomePage/templates/HomePage.html">
             <img id="HomePageImage" src="https://cdn4.iconfinder.com/data/icons/game-interface-outline/100/objects-02-512.png" >
   </a>
-<body>
 
 <div class="profile-container">
     <h1>Teacher Profile</h1>
@@ -46,9 +45,10 @@
             <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
         </div>
     </form>
-     <a href="ScheduleALesson.html" class="submit-button">Book a Lesson</a>
-
+<a href="{{ url_for('ScheduleALesson.ScheduleALessonFunc') }}" class="submit-button">Book a Lesson</a>
 </div>
-</body>
-<script src="TeacherProfile.js"></script>
-</html>
+{% endblock %}
+
+{% block page_body_js %}
+<script src="{{ url_for('TeacherProfile.static', filename='js/TeacherProfile.js') }}"></script>
+{% endblock %}

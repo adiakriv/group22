@@ -37,8 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         alert("The lesson has been set successfully");
-        window.location.href = "HomePage.html";
+        window.location.href = "Home page/HomePage.html";
     }
 
     submitButton.addEventListener('click', handleFormSubmission);
 });
+

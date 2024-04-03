@@ -99,10 +99,11 @@
 .form_div input[type="date"] {
     width: 200px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 
@@ -234,4 +235,6 @@ body {
 main {
     flex: 1;
 }
+
+
 

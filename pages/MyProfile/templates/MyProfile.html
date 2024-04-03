@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="Myprofile.css">
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
-<a href="HomePage.html">
+
+{% extends 'base.html' %}
+{% set page_head_title = 'Teacher For You' %}
+{% block page_head_css %}
+    <link rel="stylesheet" href="{{ url_for('MyProfile.static', filename='css/MyProfile.css') }}"/>
+{% endblock %}
+
+{% block page_body_content %}
+<a href="../../HomePage/templates/HomePage.html">
     <img id="HomePageImage" src="https://cdn4.iconfinder.com/data/icons/game-interface-outline/100/objects-02-512.png">
 </a>
 <h2> My Profile </h2>
@@ -52,9 +51,9 @@
     </form>
 </div>
 
-<a href="HomePage.html" class="submit-button">Update my profile</a>
+<a href="../../HomePage/templates/HomePage.html" class="submit-button">Update my profile</a>
 <br>
-<script src="MyProfile.js"></script>
+<script src="../static/js/MyProfile.js"></script>
 </body>
 <footer>
     <a href="https://www.facebook.com/bgu.student/"><img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCJIb-pxDl_xYbMwIx7uAoFzgcRlL_RvdKaA&usqp=CAU"></a>
@@ -64,4 +63,8 @@
     <div class="image-container">
         <img src="https://www.limod.co.il/wp-content/uploads/2023/02/%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A-%D7%9C%D7%91%D7%97%D7%99%D7%A8%D7%AA-%D7%9E%D7%95%D7%A1%D7%93-%D7%9C%D7%99%D7%9E%D7%95%D7%93%D7%99%D7%9D-300x214.jpg"> <!-- Your image source -->
     </div>
-</html>
+{% endblock %}
+
+{% block page_body_js %}
+<script src="{{ url_for('MyProfile.static', filename='js/MyProfile.js') }}"></script>
+{% endblock %}

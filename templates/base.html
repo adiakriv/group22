@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+    {% block page_head %}
+        {# Title #}
+        <title>{{ page_head_title|default('Teacher For you', true) }}</title>
+
+        {# Meta tags #}
+        {% block page_head_meta %}
+            <base href="/"/>
+            <meta charset="UTF-8"/>
+            {% block page_head_meta_extra %}{% endblock %}
+        {% endblock %}
+
+
+        {# Base #}
+        <base href="/"/>
+
+        {# CSS #}
+        {% block page_head_css %}{% endblock %}
+                <link rel="stylesheet" href="{{ url_for('static', filename='css/Style.css') }}"/>
+    {% endblock %}
+    </head>
+    <body>
+        {% block page_body_content %}
+            {# Main #}
+
+
+            {# Footer #}
+            {% block page_body_footer %}
+            {% include 'footer.html' %}
+            {% endblock %}
+                {#%include -------------  %#}
+            {% endblock %}
+
+
+        {% block page_body_js %}{% endblock %}
+    </body>
+</html>

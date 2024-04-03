@@ -1,6 +1,6 @@
-from flask import render_template
+from flask import render_template, request, redirect, url_for, session
 from flask import Blueprint
-from flask import request
+from pymongo import MongoClient
 
 # about blueprint definition
 BookALesson = Blueprint(

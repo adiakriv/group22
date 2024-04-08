@@ -4,6 +4,7 @@ load_dotenv()
 
 # Secret key setting from .env for Flask sessions
 SECRET_KEY = os.environ.get('SECRET_KEY')
+MONGO_URI = os.environ.get('MONGO_URI')
 
 # DB base configuration from .env for modularity and security reasons
 DB = {
@@ -13,4 +14,3 @@ DB = {
     'database': os.environ.get('DB_NAME')
 }
 
-# mongoDB =

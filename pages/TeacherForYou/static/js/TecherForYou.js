@@ -11,8 +11,7 @@ function handleFormSubmission(event) {
     }
 
     // Check if the entered user data matches the predefined user
-    if (firstName === temporaryDatabase.user1.firstName &&
-        lastName === temporaryDatabase.user1.lastName &&
+    if (Email === temporaryDatabase.user1.email &&
         password === temporaryDatabase.user1.password) {
         // If the user information is correct, proceed to the homepage
         redirectToHomepage();

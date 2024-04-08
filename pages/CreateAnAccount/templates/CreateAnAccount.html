@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% set page_head_title = 'Teacher For You' %}
 {% block page_head_css %}
-    <link rel="{{ url_for('CreateAnAccount.static', filename='css/CreateAnAccount.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('CreateAnAccount.static', filename='css/CreateAnAcount.css') }}"/>
 {% endblock %}
 
 {% block page_body_content %}
@@ -9,7 +9,7 @@
     <img id="HomePageImage" src="https://cdn4.iconfinder.com/data/icons/game-interface-outline/100/objects-02-512.png" >
 </a>
 <h2>Create an account</h2>
-<form class="form_container" action="../../HomePage/templates/HomePage.html" method="GET">
+<form class="form_container" action="/createanacount" method="POST">
     <div class="form_div">
         <label>Name:</label>
         <input type="text" name="FirstName">

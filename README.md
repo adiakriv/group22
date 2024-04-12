@@ -34,6 +34,7 @@ The HTML pages of the application were converted to templates as learned in clas
 
 ### Screenshots
 <img width="712" alt="image" src="https://github.com/adiakriv/group22/assets/134558513/5c20df3f-2c09-4c63-8457-e2c9adb19ce7">
+
 Login screen for existing users - details can be used:
 Email: adi3@gmail.com
 password: A123456

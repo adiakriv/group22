@@ -1,4 +1,4 @@
-## Part 3
+# README Part 3
 ### Brief explanation of the idea
 Our website provides a platform for scheduling private lessons according to location in Israel and the topic of the lesson. By filtering the relevant and available teachers according to the user's requirements.
 

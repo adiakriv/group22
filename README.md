@@ -1,4 +1,41 @@
-# group22
+### Part 3
+### Brief explanation of the idea
+Our website provides a platform for scheduling private lessons according to location in Israel and the topic of the lesson. By filtering the relevant and available teachers according to the user's requirements.
+
+### Sequence
+1. The user registers or logs in
+2. The user chooses the date and profession that is suitable for him
+3. The relevant teachers are shown on the next page
+4. Choose a teacher
+5. There is a check in the array of dates that the teacher is free whether the selected date is available
+6. Setting the private class# server-side implementation
+
+## The structure of the project
+
+The project is organized in a structured folder hierarchy. The structure includes separate folders for HTML, CSS, JavaScript and Python files.
+The folders in Fruit are arranged by pages and file types.
+
+## Customer routing requests
+
+The application includes functions to handle any request that comes from a customer.
+When a user registers or logs in, the system saves his details and enters them into the DB after checking if the user exists or not. If he creates an account, he is transferred to the main page. There is control over users and saving details in the SESSION of a specific user. In addition, there is a connection of the functions that address the DB, the functions that are performed on the client side and are presented to him, and the functions that connect the DB to the client side. It is also possible to check against the list of teachers if it is indeed possible to set a lesson and if it matches the user's input.
+
+## Database connection and queries
+
+The application connects to a MONGO database (having functions in the MONGODB.PY file). The functions perform all validations in the DB according to the user's input.
+
+## Forms application
+
+The forms on the site are designed so that their action feature points to the page/path to the file that will handle the form data (user input). The data from each form is processed according to the purpose of the form, which may involve selecting, adding, updating or deleting information from the database. When a user enters an input, if suitable results are found, they will be shown to him on the relevant pages (for example on the THEACHERPROFILE page). The output is displayed to the user according to the data in the DB and the requirements he selected.
+
+## HTML for templates
+
+The HTML pages of the application were converted to templates as learned in class by blocks. In addition, on the relevant pages (for example TEACHERPROFILE.HTML), functions were written in blocks that are relevant for displaying output on the HTML page (functions that use the DB).
+
+### Screenshots
+
+
+# group22 Part 2
 ## Introduction:
 Our website offers a comprehensive solution for arranging private lessons, allowing users to search based on specific criteria like location, price, and lesson topic. The website features a curated list of available teachers, enabling students to find instructors that best suit their requirements.
 ## important details:

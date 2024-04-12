@@ -26,11 +26,11 @@ The application connects to a MONGO database (having functions in the MONGODB.PY
 
 ## Forms application
 
-The forms on the site are designed so that their action feature points to the page/path to the file that will handle the form data (user input). The data from each form is processed according to the purpose of the form, which may involve selecting, adding, updating or deleting information from the database. When a user enters an input, if suitable results are found, they will be shown to him on the relevant pages (for example on the THEACHERPROFILE page). The output is displayed to the user according to the data in the DB and the requirements he selected.
+The forms on the site are designed so that their action feature points to the page/path to the file that will handle the form data (user input). The data from each form is processed according to the purpose of the form, which may involve selecting, adding, updating or deleting information from the database. When a user enters an input, if suitable results are found, they will be shown to him on the relevant pages (for example on the teacherprofile page). The output is displayed to the user according to the data in the DB and the requirements he selected.
 
 ## HTML for templates
 
-The HTML pages of the application were converted to templates as learned in class by blocks. In addition, on the relevant pages (for example TEACHERPROFILE.HTML), functions were written in blocks that are relevant for displaying output on the HTML page (functions that use the DB).
+The HTML pages of the application were converted to templates as learned in class by blocks. In addition, on the relevant pages (for example teacherprofile.html), functions were written in blocks that are relevant for displaying output on the HTML page (functions that use the DB).
 
 ### Screenshots
 <img width="712" alt="image" src="https://github.com/adiakriv/group22/assets/134558513/5c20df3f-2c09-4c63-8457-e2c9adb19ce7">

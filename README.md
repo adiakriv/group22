@@ -39,18 +39,23 @@ Email: adi3@gmail.com
 password: A123456
 
 <img width="814" alt="image" src="https://github.com/adiakriv/group22/assets/134558513/e44c6a4f-3d6f-41bb-b7cc-fc8739413c87">
+
 You can create a new user and connect with it
 
 <img width="822" alt="image" src="https://github.com/adiakriv/group22/assets/134558513/16bb33b3-e676-46f1-93c1-ab52d0c7c380">
+
 On the home page we can select Book A Lesson in order to schedule a lesson
 
 <img width="764" alt="image" src="https://github.com/adiakriv/group22/assets/134558513/36f23ac5-d2cc-4a79-8eb6-bae0475487a6">
+
 We will choose the profession and location that are suitable for us
 
 <img width="448" alt="image" src="https://github.com/adiakriv/group22/assets/134558513/b7a83490-f1a1-41f6-a210-b7034cb1c7e3">
+
 The teachers from the DB that match the location and price will be presented. If not found nothing will be displayed
 
 <img width="717" alt="image" src="https://github.com/adiakriv/group22/assets/134558513/cdc1336c-2525-4380-94d8-afc1b4803b3e">
+
 Select a date and time and if the teacher is available (availability is in the array in the teacher's DB), a lesson will be set for the student and it will be transferred to the home page
 
 

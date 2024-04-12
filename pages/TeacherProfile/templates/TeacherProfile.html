@@ -1,58 +1,69 @@
 {% extends 'base.html' %}
 {% set page_head_title = 'Teacher For You' %}
+
 {% block page_head_css %}
-   <link rel="stylesheet" href="{{ url_for('TeacherProfile.static', filename='css/TeacherProfile.css') }}"/>
+   <link rel="stylesheet" href="{{ url_for('TeacherProfile.static', filename='css/TeacherProfile.css') }}">
 {% endblock %}
 
 {% block page_body_content %}
-</head>
-<a href = "../../HomePage/templates/HomePage.html">
-            <img id="HomePageImage" src="https://cdn4.iconfinder.com/data/icons/game-interface-outline/100/objects-02-512.png" >
-  </a>
+    <a href="../../HomePage/templates/HomePage.html">
+        <img id="HomePageImage" src="https://cdn4.iconfinder.com/data/icons/game-interface-outline/100/objects-02-512.png">
+    </a>
 
-<div class="profile-container">
-    <h1>Teacher Profile</h1>
-    <form class="form_container" action="" method="GET">
-        <div class="form_div">
-            <label>Name</label>
-             <input type="text" name="FirstName" value="{{ name }}">
+    <div class="profile-container">
+        <h1>Teacher Profile</h1>
+        <form class="form_container" action="" method="GET">
             <div class="form_div">
+                <label>Name</label>
+                <input type="text" name="FirstName" value="{{ name }}">
+            </div>
+            <div class="form_div">
+                <label>Last Name</label>
+                <input type="text" name="LastName" value="{{ Lastname }}">
+            </div>
+            <div class="form_div">
+                <label>Email</label>
+                <input type="email" name="Email" value="{{ Email }}">
+            </div>
+            <div class="form_div">
+                <label>Phone number</label>
+                <input type="tel" name="phoneNumber" value="{{ phone }}">
+            </div>
+            <div class="form_div">
+                <label>City</label>
+                <input type="text" name="city" value="{{ city }}">
+            </div>
+            <div class="form_div">
+                <label>Professions</label>
+                <input type="text" name="Professions" value="{{ subject }}">
+            </div>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+            </div>
+            <div>
+                <a href="{{ url_for('ScheduleALesson.ScheduleALessonFunc') }}" class="submit-button">Book a Lesson</a>
+            </div>
+        </form>
+    </div>
 
-</div>
+    {% for teacher in teachers %}
+        <div class="profile-container">
+            <h1>Teacher Profile</h1>
+            <form class="form_container" action="" method="GET">
+                <div class="form_div">
+                    <label>Name</label>
+                    <input type="text" name="FirstName" value="{{ teacher.firstName }}">
+                </div>
+                <!-- Rest of the form fields -->
+            </form>
         </div>
-        <div class="form_div">
-            <label>Last Name</label>
-            <input type="text" name="LastName">
-        </div>
-        <div class="form_div">
-            <label>Email</label>
-            <input type="email" name="Email">
-        </div>
-        <div class="form_div">
-            <label>Phone number</label>
-            <input type="tel" name="phonNumber">
-        </div>
-        <div class="form_div">
-            <label>City</label>
-            <input type="text" name="city">
-        </div>
-        <div class="form_div">
-            <label>Professions</label>
-            <input type="text" name="Professions">
-        </div>
-        <div class="rating">
-            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
-            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
-            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
-            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
-            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
-        </div>
-        <div>
-
-<a href="{{ url_for('ScheduleALesson.ScheduleALessonFunc') }}" class="submit-button">Book a Lesson</a>
-</div>
+    {% endfor %}
 {% endblock %}
 
 {% block page_body_js %}
-<script src="{{ url_for('TeacherProfile.static', filename='js/TeacherProfile.js') }}"></script>
+    <script src="{{ url_for('TeacherProfile.static', filename='js/TeacherProfile.js') }}"></script>
 {% endblock %}

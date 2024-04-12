@@ -10,9 +10,16 @@ TeacherProfile = Blueprint(
     template_folder='templates'
 )
 
+# @TeacherProfile.route('/teacherprofile', methods=['GET'])
+# def TeacherProfileFunc():
+#     # Retrieve the form data from the session
+#
+#     # Render the template with the teacher's name
+#     return render_template('TeacherProfile.html')
+
+from flask import render_template, session
+
 @TeacherProfile.route('/teacherprofile', methods=['GET'])
 def TeacherProfileFunc():
-    # Retrieve the form data from the session
-
-    # Render the template with the teacher's name
-    return render_template('TeacherProfile.html')
+    teachers = session.get('teachers', [])
+    return render_template('TeacherProfile.html', teachers=teachers)

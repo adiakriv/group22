@@ -59,7 +59,9 @@ The teachers from the DB that match the location and price will be presented. If
 
 Select a date and time and if the teacher is available (availability is in the array in the teacher's DB), a lesson will be set for the student and it will be transferred to the home page
 
+<img width="807" alt="image" src="https://github.com/adiakriv/group22/assets/134558513/d1a1feed-c64e-445c-bebb-bd0e1d1ee23a">
 
+DB Screenshot (for example)
 
 
 

@@ -12,4 +12,3 @@ users = Db['Users']
 teachers = Db['Teachers']
 lessons = Db['Lessons']
 
-

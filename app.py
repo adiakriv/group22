@@ -1,3 +1,4 @@
+import pymongo
 from flask import Flask
 from MongoDB import *
 
@@ -37,6 +38,4 @@ from pages.BookALesson.BookALesson import BookALesson
 app.register_blueprint(BookALesson)
 
 #app.register_blueprint(BookALesson)
-
-
 

@@ -33,6 +33,7 @@ The forms on the site are designed so that their action feature points to the pa
 The HTML pages of the application were converted to templates as learned in class by blocks. In addition, on the relevant pages (for example TEACHERPROFILE.HTML), functions were written in blocks that are relevant for displaying output on the HTML page (functions that use the DB).
 
 ### Screenshots
+<img width="712" alt="image" src="https://github.com/adiakriv/group22/assets/134558513/5c20df3f-2c09-4c63-8457-e2c9adb19ce7">
 
 
 # group22 Part 2

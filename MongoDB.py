@@ -22,3 +22,19 @@ def find_teachers(subject, city):
     # Convert the results to a list
     teachers_list = list(results)
     return teachers_list
+
+def check_availability(date, time):
+    # Combine date and time into a single string
+    date_time = f"{date}T{time}"
+
+    # Find all teacher documents
+    all_teachers = teachers.find()
+
+    # Iterate over each teacher document
+    for teacher in all_teachers:
+        # Check if the date_time is in the available array of the teacher document
+        if date_time in teacher['available']:
+            return True, str(teacher['_id'])
+
+    # If the date_time is not found in any available array, return False
+    return False, None

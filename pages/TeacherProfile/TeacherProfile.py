@@ -23,3 +23,7 @@ from flask import render_template, session
 def TeacherProfileFunc():
     teachers = session.get('teachers', [])
     return render_template('TeacherProfile.html', teachers=teachers)
+
+def save_selected_teacher_id(teacher_id):
+    # Save the teacher_id in the session
+    session['selected_teacher_id'] = teacher_id
